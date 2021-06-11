@@ -1,165 +1,128 @@
-### devlopr-jekyll - A Beautiful Jekyll Theme Built for Developers
+# Agency Jekyll Theme | [Live Demo](https://raviriley.github.io/agency-jekyll-theme-starter/)
+[![RubyGems Downloads](https://img.shields.io/gem/dt/jekyll-agency.svg)](https://rubygems.org/gems/jekyll-agency)
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/raviriley/agency-jekyll-theme/blob/master/LICENSE.txt)
+[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/raviriley)
+[![template button](https://img.shields.io/badge/-Generate%20theme%20from%20template-brightgreen)](https://github.com/raviriley/agency-jekyll-theme-starter/generate)
+[![Featured on Jekyll-Themes.com](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/agency-jekyll-theme/)
 
-[![Gem Version](https://badge.fury.io/rb/devlopr.svg)](https://badge.fury.io/rb/devlopr)![workflow-badge](https://github.com/sujaykundu777/devlopr-jekyll/workflows/deploy/badge.svg)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4232ac2b-63e0-4c78-92e0-e95aad5ab8c3/deploy-status)](https://app.netlify.com/sites/devlopr/deploys)
-![](https://ruby-gem-downloads-badge.herokuapp.com/devlopr?type=total&color=brightgreen&style=plastic)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
-[![Bakers](https://opencollective.com/devlopr-jekyll/tiers/badge.svg)](https://opencollective.com/devlopr-jekyll/)
+![screenshot](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme/master/screenshot.PNG)
 
-
-You can use Devlopr as a starter for building your own Jekyll site. we purposely keep the styling minimal and bare to make it easier to add your own flare and markup. (Under Active Development) !
-
-Highly Customizable and No Hosting or Maintainence Cost is required !
-
-![devlopr jekyll](https://github.com/sujaykundu777/devlopr-jekyll/blob/master/assets/img/screenshot.PNG?raw=true)
-
-devlopr uses Markdown Files to generate data like Blog Posts, Gallery, Shop Products etc. No external database is required.
+>  :warning:  **Notice to those using legacy Formspree contact forms:** :warning: <br>
+Email-based forms are being [phased out](https://help.formspree.io/hc/en-us/articles/360056076314) by Formspree. [#11](https://github.com/raviriley/agency-jekyll-theme/pull/11) updated this theme to use the [new Formspree structure](https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam). Click [here](https://help.formspree.io/hc/en-us/articles/360056076314) for instructions on updating your site's form.
 
 
-### Launch your Static Site using Devlopr in minutes :rocket:
+This is the [Agency Bootstrap theme](https://startbootstrap.com/themes/agency/) converted to a gem-based Jekyll theme with GitHub Pages support. While this had been done before, ([here](https://github.com/y7kim/agency-jekyll-theme), [here](https://github.com/SotiriosVrachas/jekyll-theme-startbootstrap-agency), and [here](https://github.com/laklau/agency-jekyll-theme/)), these are outdated and have not been updated or maintained for years. I built this theme from the most recent Bootstrap source. I also added a lot of new features that go beyond the original theme's capabilities:
 
-To get started follow this [Tutorial](https://devlopr.netlify.app/get-started)
+- GitHub Pages support
+- [template repo][template] to get up and running in minutes
+- contact form functionality powered by [Formspree.io](https://formspree.io)
+- custom pages
+- 404 page
+- legal/Privacy Policy page
+- Google Analytics support
+- Markdown support
+- custom images
+- logo support (instead of just title text)
+- automatically updating copyright years
+- custom navigation bar, even without the header image(s)
+- customizable footer
+- custom accent color and dark/light colors
+- horizontal scrolling support for client section
+<!-- 
+- custom colors with automatic gradient generation (coming soon)
+- site title logo text font customization (coming soon)
+- horizontal scrolling support for portfolio section (coming soon)
+- about section (different from the timeline) -->
 
-```sh
-$ git clone https://github.com/your_github_username/your_github_username.github.io.git
-$ cd your_github_username
-$ ruby -v
-$ gem install bundler
-$ bundler -v
-$ bundle add jekyll
-$ bundle exec jekyll -v
-$ bundle update
-$ bundle install
-$ bundle exec jekyll serve --watch
-```
-Start the server locally at http://127.0.0.1:4000/ or http://localhost:4000/
+The Jekyll structure of this theme includes:
 
-### Deploy your devlopr-jekyll blog - One Click Deploy
+- `_portfolio` files - what generate the portfolio grid. YAML front matter handles all the details
+- the `page` layout allows custom pages, as seen in the legal and 404 pages
+- `sitetext.yml` enables complete customization of all site text
+- `navigation.yml` enables fully customizable navigation
+- `style.yml` enables fully customizable colors, background images, and other style-related things
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/sujaykundu777/devlopr-jekyll)
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sujaykundu777/devlopr-jekyll)
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sujaykundu777/devlopr-jekyll)
 
-### Github Actions
+**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/raviriley) to continue developing and maintaining it.**
 
-This Project uses this custom built action for deploying jekyll to github, available in Marketplace - [Jekyll Deploy Action](https://github.com/marketplace/actions/deploy-jekyll-site)
-### Demo (Hosted Apps)
+[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/raviriley)
 
-- Github Pages Demo - [here](https://sanketkundu.github.io/)
-- Firebase Demo - [here](https://devlopr.web.app)
-- Netlify Demo - [here](https://devlopr.netlify.com)
-- Vercel Demo - [here](https://devlopr-jekyll.vercel.app/#/)
-- Heroku Demo - [here](https://devlopr-jekyll.herokuapp.com)
-- AWS Amplify Demo - [here](https://master.d3t30wwddt6jju.amplifyapp.com/)
+## Installation
+There are three ways to install this theme:
+1. As a gem-based theme
+2. Use the [starter template][template]  (best for GitHub Pages)
+3. As a remote theme
 
-#### Features :
+#### 1. Gem-based Theme Installation
 
-- Local CMS Admin Support using [Jekyll Admin](https://jekyll.github.io/jekyll-admin/)
-- Onine CMS Admin Support using [Netlify CMS](https://sujaykundu.com/blog/how-to-setup-netlify-cms-with-github-pages-hosted-jekyll-blog/),Forestry, Siteleaf, CloudCannon, Cosmic, Contentful
-- Supports Latest [Jekyll 4.x](https://jekyllrb.com) and [Bundler](https://bundler.io)
-- Stylesheet built using Sass
-- Comments using [Hyvor](https://talk.hyvor.com/) and [Disqus](https://disqus.com/)
-- SEO-optimized
-- Real Time Search - [Algolia](https://sujaykundu.com/blog/adding-real-time-search-to-jekyll-site-using-algolia/)
-- Sell Stuff (Ecommerce) in your Blog using [Snipcart](https://snipcart.com/)
-- Send Newsletters using [Mailchimp](https://mailchimp.com/)
-- Contact Forms Support for [Getform](https://getform.io), [Formspree](https://formspree.io/)
-- Coding Activity using [Wakatime](https://wakatime.com/)
-- Hosting Support for [Github Pages](https://pages.github.com), [Netlify](https://netlify.com), [Vercel](https://vercel.com), [Heroku](https://heroku.com), [AWS Amplify](aws.amplify.com), [Firebase](https://firebase.com)
-- CI/CD Support using [Travis CI](https://sujaykundu.com/blog/deploy-jekyll-blog-using-github-pages-and-travis-ci/), [Buddy](https://buddy.works/) , [Circle CI](https://circleci.com/)
+Add this line to your Jekyll site's `Gemfile`:
 
-#### Jekyll Admin
-You can easily manage the site locally using the Jekyll admin : [http://localhost:4000/admin](http://localhost:4000/admin)
-
-![Jekyll Admin](https://github.com/sujaykundu777/devlopr-jekyll/blob/master/assets/img/jekyll-admin.PNG?raw=true)
-
-## Recent Release Changes (v 0.4.7):
-
-- Minor Bug fixes and optimizations
-- [Added Support for Multi Authors](https://devlopr.netlify.app/blog/added-multi-author-support/#/)
-- [Added Support for Math Symbols](https://devlopr.netlify.app/blog/added-latex-equations-support/#/)
-
-You can check out for all changelogs [here](https://www.buymeacoffee.com/sujaykundu/release-v-0-4-7)
-
-## Pull the latest changes
-
-```s
-git remote -v
-git remote add upstream https://github.com/sujaykundu777/devlopr-jekyll.git
-git fetch upstream
-git checkout master
-git merge upstream/master
-git push
+```ruby
+gem "jekyll-agency"
 ```
 
-## Using Docker :
+Then, replace the contents of your `_config.yml` file with [this](https://github.com/raviriley/agency-jekyll-theme/blob/master/_config.yml).
 
-Building the Image :
+And then execute:
 
-`docker build -t my-devlopr-jekyll-blog .`
+    $ bundle
 
-Running the container :
+Or, install it yourself as:
 
-`docker run -d -p 4000:4000 -it --volume="$PWD:/srv/jekyll" --name "my_blog" my-devlopr-jekyll-blog:latest jekyll serve --watch`
+    $ gem install jekyll-agency
 
-## Using Docker Compose :
+#### 2. Using the [Starter Template][template]
+This is the fastest and easiest way to get up and running on GitHub Pages.
+Simply generate your own repository by clicking the button below, then replace the sample content with your own and configure for your needs.
 
-### Development :
+[![template button](https://img.shields.io/badge/-Create%20repository%20from%20template-brightgreen)](https://github.com/raviriley/agency-jekyll-theme-starter/generate)
 
-You can run the app in development mode : (your changes will be reflected --watch moded)
+#### 3. Remote Theme Installation
 
-Serve the site at http://localhost:4000 :
+Replace the contents of your `_config.yml` file with [this](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/_config.yml) and your `Gemfile` with [this](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/Gemfile). Then execute:
 
-`docker-compose -f docker-compose-dev.yml up --build --remove-orphans`
+    $ bundle
 
-### Production :
 
-You can run the app in production mode : (your changes will be reflected --watch moded)
+[template]: https://github.com/raviriley/agency-jekyll-theme-starter
 
-Serve the site at http://localhost:4000 :
+<!--
+## Documentation and Usage
 
-`docker-compose -f docker-compose-prod.yml up --build --remove-orphans`
+**TODO:** Write usage instructions here. Describe available layouts, includes, or assets.
 
-Stop the app :
-`docker-compose -f docker-compose-prod.yml down`
-Once everything is good and ready to go live -
+navheader is used only for the home page. nav is used everywhere else.
 
-`docker-compose -f docker-compose-prod.yml up --build --detach`
+Layouts:
 
-## Contributors:
+Includes:
 
-This project exists thanks to all the people who contribute.
+-->
 
-Contributions are more than just welcome. Fork this repo and create a new branch, then submit a pull request
+## Contributing
 
-- 1.Fork it [http://github.com/sujaykundu777/devlopr-jekyll/fork](http://github.com/sujaykundu777/devlopr-jekyll/fork )
+This project is intended to be a welcoming space for collaboration. If you have an idea, suggestion, feature request, etc., feel free to open an issue or pull request.
+For bug reports, follow the provided template.
 
-- 2.Create your feature branch
-`git checkout -b my-new-feature`
+#### Improvements - Up for Grabs
 
-- 3.Commit your changes
-`git commit -am 'Add some feature'`
+- multiple language support (~~Spanish~~, Chinese, Arabic, etc.)
+- customizable background coloring for each section
+- ~~custom background images~~
 
-- 4.Push to the branch
-`git push origin my-new-feature`
+## Development
 
-- 5.Create new Pull Request
+To set up your environment to develop this theme, [clone this repo](https://github.com/raviriley/agency-jekyll-theme.git), then run `bundle install`. To test the theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. Add pages, documents, data, etc. like normal to test the theme's contents. As you make modifications, your site will regenerate and you should see the changes in the browser after a refresh.
 
-## Support this Project:
+## License
 
-Back this project by Donating to our [Open Collective](https://opencollective.com/devlopr-jekyll/donate) or if you like my work[Buymeacoffee](https://buymeacoffee.com/sujaykundu).
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-Thanks to all our Backers ! 🙏 [Become a Backer](https://opencollective.com/devlopr-jekyll/donate)
+<!--
 
-<a href="https://opencollective.com/devlopr-jekyll#backers" target="_blank"><img src="https://opencollective.com/devlopr-jekyll/backers.svg?width=890" /></a>
+## Example Implementations
 
-<a href="https://opencollective.com/devlopr-jekyll#backers" target="_blank"><img src="https://opencollective.com/devlopr-jekyll/tiers/backer.svg?avatarHeight=36" /></a>
+- [CV Enterprises](https://cventerprises.org)
+- [Mortazavi Lab at UC Irvine](https://mortazavilab.github.io/)
 
-### For Help :
-
-You can contact me, if you need any help via [Email](mailto:sujaykundu777@gmail.com). If you like the project. Don't forget to :star: !
-
-## Licence
-
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT). You can do anything you want, including projects for your clients, as long as you mention an attribution back (credit links in footer). See the [Licence](https://github.com/sujaykundu777/devlopr-jekyll/blob/master/LICENSE) file
-
+-->
